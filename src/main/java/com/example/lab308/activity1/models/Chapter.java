@@ -1,9 +1,7 @@
-package com.example.lab308.models;
+package com.example.lab308.activity1.models;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -18,6 +16,7 @@ public class Chapter {
     private Integer district;
 
     @OneToOne
+    @JoinColumn(name="member_id", nullable = false)
     private Member president;
 
     @OneToMany(mappedBy = "chapter")
