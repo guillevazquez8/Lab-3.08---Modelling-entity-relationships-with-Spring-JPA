@@ -3,14 +3,14 @@ package com.example.lab308.activity2;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
+@Inheritance(strategy=InheritanceType.JOINED)
 public class Event {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
 
     private LocalDate date;

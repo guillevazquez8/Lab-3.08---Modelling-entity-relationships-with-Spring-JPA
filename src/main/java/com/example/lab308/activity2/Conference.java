@@ -11,4 +11,13 @@ public class Conference extends Event {
     @OneToMany(mappedBy = "conference")
     Set<Speaker> speakers = new HashSet<Speaker>();
 
+    public Conference(){}
+
+    public Set<Speaker> getSpeakers() {
+        return speakers;
+    }
+
+    public void setSpeakers(Set<Speaker> speakers) {
+        this.speakers = speakers;
+    }
 }

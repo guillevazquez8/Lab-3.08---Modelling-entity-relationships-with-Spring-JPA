@@ -1,4 +1,4 @@
-package com.example.lab308.activity1.models;
+package com.example.lab308.activity1;
 
 public enum Status {
     ACTIVE,
