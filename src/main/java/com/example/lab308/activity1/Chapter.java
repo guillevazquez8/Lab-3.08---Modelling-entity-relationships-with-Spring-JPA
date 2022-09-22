@@ -13,10 +13,10 @@ public class Chapter {
 
     private String name;
 
-    private Integer district;
+    private String district;
 
-    @OneToOne
-    @JoinColumn(name="member_id", nullable = false)
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="member_id")
     private Member president;
 
     @OneToMany(mappedBy = "chapter")
@@ -33,11 +33,11 @@ public class Chapter {
         this.name = name;
     }
 
-    public Integer getDistrict() {
+    public String getDistrict() {
         return district;
     }
 
-    public void setDistrict(Integer district) {
+    public void setDistrict(String district) {
         this.district = district;
     }
 

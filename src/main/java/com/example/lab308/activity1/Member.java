@@ -17,8 +17,8 @@ public class Member {
 
     private LocalDate renewalDate;
 
-    @ManyToOne
-    @JoinColumn(name="chapter_id", nullable=false)
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="chapter_id")
     private Chapter chapter;
 
     public Member() {
