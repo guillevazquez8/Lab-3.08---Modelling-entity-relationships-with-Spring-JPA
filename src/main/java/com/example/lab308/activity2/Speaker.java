@@ -14,7 +14,6 @@ public class Speaker {
     private int presentationDuration;
 
     @ManyToOne
-    @JoinColumn(name="conference_id", nullable = false)
     private Conference conference;
 
     public Speaker(){}

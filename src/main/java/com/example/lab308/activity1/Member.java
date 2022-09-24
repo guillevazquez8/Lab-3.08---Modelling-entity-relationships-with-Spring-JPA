@@ -18,7 +18,6 @@ public class Member {
     private LocalDate renewalDate;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="chapter_id")
     private Chapter chapter;
 
     public Member() {

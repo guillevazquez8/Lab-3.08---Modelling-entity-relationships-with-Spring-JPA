@@ -7,15 +7,15 @@ import java.util.Set;
 
 @Entity
 @Inheritance(strategy=InheritanceType.JOINED)
-public class Event {
+public abstract class Event {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
 
     private LocalDate date;
 
-    private int duration;
+    private Integer duration;
 
     private String location;
 
@@ -35,11 +35,11 @@ public class Event {
         this.date = date;
     }
 
-    public int getDuration() {
+    public Integer getDuration() {
         return duration;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(Integer duration) {
         this.duration = duration;
     }
 
