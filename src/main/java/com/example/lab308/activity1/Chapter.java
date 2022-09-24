@@ -16,7 +16,7 @@ public class Chapter {
     private String district;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="member_id")
+    @JoinColumn(name="president")
     private Member president;
 
     @OneToMany(mappedBy = "chapter")
