@@ -1,8 +1,5 @@
-# Lab 3.08: Modelling entity relationships
+# Lab 3.08: Modelling entity relationships with Spring JPA
 
+- Activity 1: Model the relationships of a simple app with Chapters and Members
 
-Notas:
-1. Falta en Chapter la asociación @ManyToOne con Asociation. De hecho, te falta la Entity de Asociation!
-2. Puedes empezar ya a trabajar con @Getter, @Setter, @Builder!
-3. No te olvides de no usar tipos primitivos en las entities y que los atributos de una entidad si no se van a heredar por defecto deben ser private
-4. Pocos tests :(
+- Activity 2: Model the relationships of an event management app with Events (Conferences or Expositions) and Guests (who can be Speakers too)
