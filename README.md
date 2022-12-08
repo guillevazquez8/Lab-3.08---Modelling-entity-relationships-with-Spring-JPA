@@ -1,4 +1,5 @@
-# Enterprise-Java-Development-3.08
+# Lab 3.08: Modelling entity relationships
+
 
 Notas:
 1. Falta en Chapter la asociación @ManyToOne con Asociation. De hecho, te falta la Entity de Asociation!
